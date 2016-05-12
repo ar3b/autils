@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 group = "com.ar3b"
-version = "0.2"
+version = "0.1"
 
 buildscript {
     repositories {
