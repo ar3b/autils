@@ -1,6 +1,5 @@
 package com.ar3b.recycler;
 
-import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
@@ -13,7 +12,7 @@ public class LinearRecyclerDividerItemDecoration extends RecyclerView.ItemDecora
 
     private Drawable mDivider;
 
-    public LinearRecyclerDividerItemDecoration(Context context, Drawable resource) {
+    public LinearRecyclerDividerItemDecoration(Drawable resource) {
         mDivider = resource;
     }
 
