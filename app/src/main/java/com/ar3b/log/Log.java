@@ -22,8 +22,6 @@ public class Log {
     }
 
     public static void w(boolean with_location, String format, Object... args) {
-        if (!BuildConfig.DEBUG)
-            return;
         Formatter f = new Formatter();
         String s = f.format(format, args).toString();
         if (type.equals(_V))
@@ -37,8 +35,6 @@ public class Log {
     }
 
     public static void tag(String tag, String format, Object... args) {
-        if (!BuildConfig.DEBUG)
-            return;
         Formatter f = new Formatter();
         String s = f.format(format, args).toString();
         if (type.equals(_V))
@@ -48,8 +44,6 @@ public class Log {
     }
 
     public static void write(boolean with_location, String format, Object... args) {
-        if (!BuildConfig.DEBUG)
-            return;
         Formatter f = new Formatter();
         String s = f.format(format, args).toString();
         if (type.equals(_V))
